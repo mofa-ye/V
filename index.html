@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار Google Analytics</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9CQ2F4TKH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-S9CQ2F4TKH'); // استبدل بمعرّف القياس الحقيقي
+    </script>
+</head>
+<body>
+    <h1>مرحبًا بك في صفحة الاختبار</h1>
+    <p>هذه صفحة HTML بسيطة لاختبار Google Analytics.</p>
+    
+    <button onclick="gtag('event', 'button_click', {'event_category': 'User Interaction', 'event_label': 'Test Button'});">
+        اضغط هنا لتسجيل حدث
+    </button>
+    
+    <p>يمكنك الآن التحقق من البيانات في Google Analytics ضمن **التقارير > الوقت الفعلي**.</p>
+</body>
+</html>
